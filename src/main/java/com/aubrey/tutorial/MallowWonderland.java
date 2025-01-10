@@ -1,5 +1,6 @@
 package com.aubrey.tutorial;
 
+import com.aubrey.tutorial.block.ModBlocks;
 import com.aubrey.tutorial.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -38,6 +39,7 @@ public class MallowWonderland
         MinecraftForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -57,6 +59,11 @@ public class MallowWonderland
         {
             event.accept(ModItems.MULCH);
             event.accept(ModItems.KEBAB);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
+        {
+            event.accept(ModBlocks.MULCH_BLOCK);
         }
     }
 

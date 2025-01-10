@@ -1,4 +1,6 @@
 {
   "item.mallowwonderland.mulch": "Mulch",
-  "item.mallowwonderland.kebab": "Kebab"
+  "item.mallowwonderland.kebab": "Kebab",
+
+  "block.mallowwonderland.mulch_block": "Block of Mulch"
 }
