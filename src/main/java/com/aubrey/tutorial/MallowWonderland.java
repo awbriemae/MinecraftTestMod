@@ -61,9 +61,15 @@ public class MallowWonderland
             event.accept(ModItems.KEBAB);
         }
 
+        if(event.getTabKey() == CreativeModeTabs.COMBAT)
+        {
+            event.accept(ModItems.BASEBALL);
+        }
+
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
         {
             event.accept(ModBlocks.MULCH_BLOCK);
+            event.accept(ModBlocks.GEAROID_BLOCK);
         }
     }
 

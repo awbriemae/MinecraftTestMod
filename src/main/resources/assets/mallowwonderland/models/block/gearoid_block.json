@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "mallowwonderland:block/mulch_block"
+    "all": "mallowwonderland:block/gearoid_block"
   }
 }

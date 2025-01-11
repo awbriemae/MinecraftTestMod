@@ -14,6 +14,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
 
+
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS  =
             DeferredRegister.create(ForgeRegistries.BLOCKS, MallowWonderland.MOD_ID);
@@ -21,6 +22,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> MULCH_BLOCK = registerBlock("mulch_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+    public static final RegistryObject<Block> GEAROID_BLOCK = registerBlock("gearoid_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.WET_SPONGE)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block)
     {

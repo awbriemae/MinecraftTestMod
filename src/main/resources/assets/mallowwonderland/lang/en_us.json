@@ -2,5 +2,8 @@
   "item.mallowwonderland.mulch": "Mulch",
   "item.mallowwonderland.kebab": "Kebab",
 
-  "block.mallowwonderland.mulch_block": "Block of Mulch"
+  "item.mallowwonderland.baseball": "Baseball",
+
+  "block.mallowwonderland.mulch_block": "Block of Mulch",
+  "block.mallowwonderland.gearoid_block": "Block of Jeedle"
 }
