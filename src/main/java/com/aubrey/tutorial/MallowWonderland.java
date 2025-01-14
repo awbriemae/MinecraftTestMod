@@ -68,6 +68,7 @@ public class MallowWonderland
         if(event.getTabKey() == CreativeModeTabs.COMBAT)
         {
             event.accept(ModItems.BASEBALL);
+            event.accept(ModItems.TAZER);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)

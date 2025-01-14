@@ -2,7 +2,9 @@ package com.aubrey.tutorial.item;
 
 import com.aubrey.tutorial.MallowWonderland;
 import com.aubrey.tutorial.item.custom.BaseballItem;
+import com.aubrey.tutorial.item.custom.TazerItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SwordItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -19,6 +21,9 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BASEBALL = ITEMS.register("baseball",
             () -> new BaseballItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> TAZER = ITEMS.register("tazer",
+            () -> new TazerItem(new Item.Properties().durability(4)));
 
 
     public static void register(IEventBus eventBus)
